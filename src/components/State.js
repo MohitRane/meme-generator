@@ -1,5 +1,5 @@
 import React from "react"
-import '../style.css' // <== Import CSS to see work
+// import '../style.css' // <== Import CSS to see work
 
 export default function State() {
     // const result = React.useState("Yes")
@@ -55,6 +55,7 @@ export default function State() {
     
     return (
         <div>
+            {/* State Practice */}
             <div className="state">
                 <h1 className="state--title">Is state important to know?</h1>
                 <div className="state--value" onClick={handleClick}>
@@ -62,6 +63,7 @@ export default function State() {
                     {/* <h1>{result[0]}</h1> */}
                 </div>
             </div><hr />
+            {/* Counter State Practice */}
             <div className="counter">
                 <button className="counter--minus" onClick={counterMinus}>–</button>
                 <div className="counter--count">
@@ -69,11 +71,20 @@ export default function State() {
                 </div>
                 <button className="counter--plus" onClick={counterPlus}>+</button>
             </div><hr />
+            {/* Flipping State Practice */}
             <div className="state">
                 <h1 className="state--title">Do I feel like going out tonight?</h1>
                 <div className="state--value" onClick={changeMind}>
                     <h1>{isGoingOut ? "Yes" : "No"}</h1>
                 </div>
+            </div><hr/>
+            {/* Accessibility Practice
+            In Above div structure we are using onClick on div we should use button to follow best practice */}
+            <div className="state">
+                <h1 className="state--title">Do I feel like going out tonight?</h1>
+                <button className="state--value2" onClick={changeMind}>
+                    {isGoingOut ? "Yes" : "No"}
+                </button>
             </div>
         </div>
     )

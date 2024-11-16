@@ -7,9 +7,9 @@ export default function App() {
   
   return (
     <div>
-      {/* <Header />
-      <Meme /> */}
-      // <State />    
+      <Header />
+      <Meme />
+      {/* <State /> */}
     </div>
   );
 }

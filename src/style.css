@@ -33,6 +33,22 @@ body {
     justify-content: center;
     align-items: center;
     color: #262626;
+    
+}
+
+.state--value2 {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #262626;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    border: none;
 }
 
 .counter {
